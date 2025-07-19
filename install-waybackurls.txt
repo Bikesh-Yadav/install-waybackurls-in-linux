@@ -1,0 +1,34 @@
+	
+	
+	INSTALL WAYBACKURLS IN LINUX
+	----------STEPS--------
+	
+	
+## Step 1: Ensure Go is Installed
+		Check Go version:
+		>go version
+
+	If not installed, install Go:
+		Check our video for "install golang in linux".
+   
+
+## Step 3: Install waybackurls
+
+	Use the following command:
+		>go install github.com/tomnomnom/waybackurls@latest
+
+## Step 4: Verify Installation
+
+		Run:
+		>waybackurls -h
+
+	Expected output: usage instructions.
+
+## Step 5 (Optional): Move to Global Path
+
+To use from anywhere:
+    sudo cp ~/go/bin/waybackurls /usr/local/bin/
+
+## Example Usage
+
+    echo "example.com" | waybackurls
